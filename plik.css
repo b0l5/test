@@ -1,0 +1,246 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document domain("hdbits.org") {
+/*main*/
+
+@-moz-document regexp("https?://hdbits.org/"){
+table.main:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > h2:nth-child(2) {
+    display:none;
+}
+    
+table.main:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(3){
+	display:none;
+}
+    
+}
+    
+#sitesearch {
+    display: none;
+}
+
+#sidebar-container {
+    display: none;
+}
+
+#logo {
+   	background: url('http://svgshare.com/i/4ih.svg') no-repeat top left !important;
+    width: 180px;
+	height: 30px;
+    padding-left: 5%;
+	margin-left: 3%;
+	margin-top: 7%;
+}
+     
+
+#menusides {
+    display: none;
+}
+
+.menunavigation_new:nth-child(4) {
+    display: none;
+}
+
+.menunavigation_new:nth-child(5) {
+    display: none;
+}
+
+
+.menunavigation:nth-child(6) {
+    display: none;
+}
+
+.menunavigation:nth-child(7) {
+    display: none;
+}
+
+
+.menunavigation:nth-child(8) {
+    display: none;
+}
+
+.menunavigation:nth-child(11) {
+    display: none;
+}
+
+.menunavigation:nth-child(12) {
+    display: none;
+}
+
+.menunavigation:nth-child(13) {
+    display: none;
+}
+
+.menunavigation:nth-child(14) {
+    display: none;
+}
+
+table.main[width="737"] {
+    width: 100% !important;
+}
+
+div.curuser-stats:nth-child(3) {
+    display: none;
+}
+
+
+
+img[src="/pic/blankpoll.gif"]{
+	display:none;
+}
+
+
+/*forums */
+@-moz-document regexp("https?://[a-z]+.[a-z]+/(forums)") {
+#latest_posts {
+	display: none;
+}
+    
+    table[width="800"] {
+    display: none !important;
+}
+
+th[align="right"]{
+	display: none;
+}
+	
+td[align="right"]{
+	display: none;
+}
+    
+td.bottom p a b {
+    font-size: 10px;
+}
+}
+
+/* forums id view */
+@-moz-document regexp("https?://[a-z]+.[a-z]+/[a-z]+/[a-z]+.[a-z]+=[0-9]+") {
+
+th[align="right"]{
+	display: none;
+}
+    
+       table[width="800"] {
+    display: none !important;
+}
+	
+td[align="right"]{
+	display: none;
+}
+
+td[align="left"]:nth-child(4) {
+    display: none;
+}
+              
+td.bottom:nth-child(2) > table:nth-child(4) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(2) {
+ 	display: none;
+}
+td.bottom:nth-child(2) > table:nth-child(4) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(3) {
+    	display: none; 
+}
+td.bottom:nth-child(2) > table:nth-child(4) > tbody:nth-child(1) > tr:nth-child(1) > th:nth-child(4) {
+ 		display:none;   
+}
+}
+    
+ @-moz-document regexp("https?://[a-z]+.org/forums/viewtopic.topicid.*.page.*") {
+                  table[width="800"] {
+    display: none !important;
+}   
+}
+ 
+ @-moz-document regexp("https?://hdbits.org/support") {
+                  table[width="800"] {
+    display: none !important;
+}   
+}
+
+     @-moz-document regexp("https?://[a-z]+.[a-z]+/dox.php.[a-z]+=[0-9]+&search=") {
+                  table {
+    display: none !important;
+}   
+}
+   
+ @-moz-document regexp("https?://hdbits.org/inbox.php*") {
+    table[style="min-width:650px;"] {
+    min-width:100% !important;
+}   
+              
+              
+table tbody#inboxbody tr td a[href*="friends"] {
+	display: none;	
+}
+                        
+}
+   @-moz-document regexp("https?://hdbits.org/inbox.php.action=viewmessage.id.*") { 
+                table[width="660"] {
+    width:100% !important;}
+    
+}     
+    
+#donate, .donor, .seeding, .leeching, .sentbox, .inbox, .inboxnew, .buddylist, .mytorrents, .searchicon {
+    background-image: url("http://svgshare.com/i/4j4.svg");
+}
+    
+    
+    .unlockednew {
+    width: 32px;
+    height: 32px;
+    background: url("http://svgshare.com/i/4jc.svg") no-repeat center;
+}
+    
+    .unlocked {
+    width: 32px;
+    height: 32px;
+    background: url("http://svgshare.com/i/4iQ.svg") no-repeat center;
+}
+    
+ .lockednew {
+    width: 32px;
+    height: 32px;
+    background: url("http://svgshare.com/i/4jD.svg") no-repeat center;
+}   
+    
+    .locked {
+    width: 32px;
+    height: 32px;
+    background: url("http://svgshare.com/i/4jj.svg") no-repeat center;
+}
+    
+    
+    .hasposted::after {
+    content: url("http://svgshare.com/i/4hh.svg");
+    height: 8px;
+    left: 20px;
+    position: relative;
+    top: 20px;
+    width: 8px;
+}
+
+/* viewtopic */
+    
+.js-watchtopic {
+ 	display:none;   
+}
+.std-content {
+    width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td[width="150"] {
+	display:none;
+}
+
+
+.comment img[src^="http"] {
+	max-width: 100%;
+}
+    
+h1 {
+    font-size: 14px;
+}
+    
+td.embedded div p b {
+ 	font-size: 10px;   
+}
+    
+}
